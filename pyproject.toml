@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pbt-hierarchical-classification"
+version = "0.1.0"
+description = "Patient-level WSI classification with hierarchical models and selective clinical/IHC evidence fusion"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+  "numpy>=1.26,<2",
+  "h5py>=3.10,<4",
+  "tensorflow>=2.14,<2.16",
+]
+
+[project.scripts]
+pbt = "pbt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

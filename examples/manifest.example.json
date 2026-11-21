@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "patients": [
+    {
+      "patient_id": "synthetic_example_patient",
+      "label": "C1",
+      "features": ["features/synthetic_example_slide.h5"],
+      "age_years": null,
+      "location": null,
+      "ihc": {"GFAP": null, "Synaptophysin": null, "INI1": null, "H3K27M": null, "ALK1": null}
+    }
+  ]
+}
